@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styly.css">
+</head>
+<body>
+    <form action=""  class="form-login">
+    <h3>Producer & umudozi</h3>
+    <h5>phone number or email </h5>
+    <input type="text" placeholder="phone Number or email"class="input" id="inputphone">
+    <h5> password</h5>
+    <input type="password" placeholder="password" class="input" id="inputpassword">
+    <i class="fa-solid fa-eye" id="eyes"></i></input>
+    <h5>&#9907 forget password</h5>
+    <button type="button" class="signbtn" onclick="signIn()"><i class="fa-solid fa-right-to-bracket" id="signicon" >
+
+    </i>sign in</button>
+    <h5>content with Google</h5>
+    <button type="button" class="btn-google"><i class="google-icon fab fa-google" id="google"></i>continue with Google</button>
+    
+
+</form>
+    <script>
+            const username = document.getElementById("inputphone").value;
+            const password = document.getElementById("inputpassword").value;
+            function signIn(){
+                    alert("invalid username");
+                if(username==="dudufredu@gmail.com" && password==="dukundane543"){
+                    alert("signin successfull");
+                    window.location.href = "authenticated.html";
+                    
+                }else{
+                    alert("and invalid password"); 
+                }
+            }
+            function btnGoogle(){
+                window.location.href = "https://mail.google.com/mail/u/0/#inbox";
+            }
+            
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- const username = document.getElementById("inputphone").value;
+const password = document.getElementById("inputpassword").value;
+function signIn(){
+        alert("invalid username");
+    if(!username==="0782634364"){
+        alert("invalid username");
+    }else if(!password==="12345"){
+        alert("and invalid password"); 
+    } -->
+}
